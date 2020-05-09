@@ -1,0 +1,95 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style href="C:\Users\hp\Documents\Workspace\Web Project\Project 1\Beards-heaven-styling.css"></style>
+    <title> Beards Heaven | beardsheaven.com </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Beards-heaven-styling.css">
+
+
+</head>
+
+<body>
+<div class="background">
+
+        
+    <div class="site">
+
+        <img src="beardsheaven-logos.jpeg" alt="Beard's Heaven Logo" id="logo">
+        <h1 id="site-name"> Beard's Heaven </h1>
+        <input type="text" placeholder="Search" id="search" class="search"></input>
+        <button id="searchbutton">🔍</button>
+            
+    </div>
+
+    <nav id="navbar">
+        <ul id="top-mid">
+            <li id="Home" class="active" ><a href="#" class="active" style="color: gold;">Home</a></li>
+            <li id="beardproducts"><a href="Beards-heaven-beardproducts.html">Beard Products</a></li>
+            <li id="aboutus"><a href="Beards-heaven-aboutus.html">About Us</a></li>
+            <li id="contactus"><a href="Beards-heaven-contactus.html">Contact Us</a></li>
+            <li id="cart"><a href="Beards-heaven-cart.html" class="fa fa-shopping-cart"></a></li>
+        </ul>
+    </nav>
+</div>
+
+<div>
+    <h2 id="hello"></h2>
+</div>
+
+<section id="sectioning">
+    <aritcle id="left"> 
+        <form action="backend.php">
+                <legend><h3>Sign Up to recieve exciting offers first:</h3></legend> 
+
+                <br>
+                <label for="username">Enter your name: </label>
+                <input type="name" id="username" placeholder="Enter your name">
+
+                <br>
+                <label for="email">Enter your email id: </label>
+                <input type="email" id="email" placeholder="Enter your Email">
+
+                <br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="date">
+
+                <br>
+                <input type="submit" value="Get Started" id="submit">
+            </form>
+    </aritcle>
+
+    <article id="middle">
+       <h3 id="middleheading">Our Services:</h3> 
+        <br>
+        <video controls poster="https://images.unsplash.com/photo-1542818279-04aa19d54f06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" width="90%" preload="metadata">
+            <source src="a.mp4" type="video/mp4">
+        </video>
+        <p id="service"></p>
+    </article>
+
+    <article id="right">
+        <h3 id="rightheading">New Post:</h3> 
+        <div id="posts">
+            No posts yet.
+        </div>
+
+        <textarea type="text" placeholder="Your Comments" id="typehere"></textarea><br>
+        <button id="yourpost" onclick="postComment()">Post</button>
+    </article>
+</section>
+
+
+
+<script type="text/javascript" src="beards-heaven.js"></script>
+</body>
+
+</html>

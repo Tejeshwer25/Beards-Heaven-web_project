@@ -1,0 +1,312 @@
+body {
+    background-image: url('xyz.jpg');
+    background-attachment: fixed;
+    color: white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+/* Styling The Site Details like name and logo */
+.site
+{
+    border:.1rem solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#logo
+{
+    height: 9%;
+    width: 9%;
+    border-radius: 30%;
+    margin:2%;
+    border: 7px solid rgb(161, 157, 157); 
+} 
+
+#search
+{
+    height:1rem;
+    margin-top:1rem ;
+
+}
+
+#searchbutton
+{
+    height:1.4rem;
+    width:2rem;
+    margin-top:1rem;
+    margin-right: 1rem;
+}
+
+#site-name
+{
+    flex-grow: 1;
+    font-weight: bold;
+    padding-top: 2% ;
+    padding-left: 2%;
+    font-size: 300%;
+}
+
+/* Styling The Navigation Bar */
+
+#navbar
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    margin-top: 1rem;
+    align-items: center;
+    position: sticky;
+}
+
+#top-mid li
+{
+    display: inline-flex;
+    list-style: none;
+}
+
+#top-mid li a
+{
+    text-decoration: none;
+    color: white;
+    padding-right:65px;
+    font-size: 2rem;
+}
+
+#current a
+{
+    color:gold;
+}
+
+/* Mouse Hovering */
+
+#navbar #top-mid li a:hover
+{
+    color: gold;
+    text-shadow: white;
+    pointer-events: all;
+}
+
+.active
+{
+    color:gold;
+}
+
+/* Styling section */
+
+#sectioning
+{
+    display: grid;
+    grid-template-columns: 24% 50% 24% ;
+    grid-template-areas: "left middle right";
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+
+#middle
+{
+    border: 2px solid white;
+    margin:2%;
+    padding: 2%;
+    margin-top: 4%;
+    border-radius: 12px;
+    justify-self: center;
+    align-self: center;
+    grid-area: middle;
+}
+
+#middleheading
+{
+    text-align: center;
+}
+
+#left
+{
+    border: 2px solid white;
+    margin: 2%;
+    margin-top: 6%;
+    padding: 2%;
+    border-radius: 12px;
+    text-align: center;
+    grid-area: left;
+}
+
+#right
+{
+    border:2px solid white;
+    margin: 2%;
+    margin-top: 6%;
+    padding: 2%;
+    border-radius: 12px;
+    text-align: center;
+    grid-area: right;
+}
+
+/* Styling the form */
+
+form input
+{
+    margin:2%;
+    border-radius: 5px;
+}
+
+#username
+{
+    margin-left: 6%;
+}
+
+#date
+{
+    margin-left: 10%;
+    width: 54%;
+}
+
+#submit
+{
+    margin-left: 30%;
+    margin-top: 5%;
+    background-color:darkgoldenrod;
+    background: 2px solid darkgoldenrod;
+    border-radius: 12px;
+}
+
+/* Styling comment section */
+#posts
+{
+    margin-top: 12%;
+}
+
+#typehere
+{
+    margin-top: 20%;
+    height: 40%;
+    width: 70%;
+}
+
+input::placeholder
+{
+    text-align: center;
+}
+
+#yourpost
+{
+    margin-top: 5%;
+    color:white;
+    background-color: black;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:458px) 
+{
+    body
+    {
+        background-color: black;
+    }
+    #top-mid #contactus
+    {
+        display: none;
+    }
+    #top-mid #aboutus
+    {
+        display: none;
+    }
+    #logo
+    {
+        height: 5rem;
+        width: 5rem;
+    }
+    #site-name
+    {
+        margin:1px;
+        padding:10px;
+    }
+    #search
+    {
+        width: 14rem;
+        border-radius: 20px;
+        padding-left:10px;
+    }
+
+    #sectioning
+    {
+        grid-template-rows: 3;
+        grid-template-areas: 
+                            "left
+                            middle
+                            right";
+    }
+}
+
+@media only screen and (min-width: 458px) and (max-width:830px) 
+{
+    #sectioning
+    {
+        grid-template-rows: 3;
+        grid-template-areas:
+            "left
+            middle
+            right";;
+    }
+    #top-mid #contactus
+    {
+        display: none;
+    }
+    #top-mid #aboutus
+    {
+        display: none;
+    }
+    #search
+    {
+        margin-left:10px;
+        border-radius: 12px;
+        padding-left: 12px;
+        width:20rem;
+    }
+    #site-name
+    {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 830px) and (max-width:1030px) 
+{
+    #top-mid #contactus
+    {
+        display: none;
+    }
+}
+
+#welcome-button
+{
+    margin-top:1rem;
+    padding:1rem;
+    color:white;
+    background-color: black;
+    border-radius: 1em;
+
+}
+
+#welcome-button:hover
+{
+    opacity:.9;
+    color:gold;
+    font-size: 1em;
+    border-radius: 1rem;
+    background-color: darkred;
+}
+
+#hello
+{
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    color: darkgoldenrod;
+    background-color: darkred;
+}

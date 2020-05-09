@@ -1,0 +1,27 @@
+article
+{
+    border: 3px solid white;
+    margin-top: 15px;
+    padding: 12px;
+    font-family: 'Hind Madurai', sans-serif;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+p
+{
+    padding-top: 15px;
+}
+a
+{
+    padding-top: 15px;
+    text-decoration: none;
+    color: gold;
+}
+
+a:hover
+{
+    color: darkred;
+    text-decoration: dotted;
+}

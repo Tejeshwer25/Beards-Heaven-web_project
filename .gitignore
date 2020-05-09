@@ -1,0 +1,4 @@
+express/
+node_modules/
+static/
+views/

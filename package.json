@@ -1,0 +1,15 @@
+{
+  "name": "beards-heaven",
+  "version": "1.0.0",
+  "description": "Website for Beard Enthusiasts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tejeshwer Singh Sachdeva",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.4",
+    "tejeshwer": "file:express"
+  }
+}
